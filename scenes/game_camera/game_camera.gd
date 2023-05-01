@@ -9,7 +9,7 @@ func _ready():
 
 func _process(delta):
 	acquire_target()
-	global_position = global_position.lerp(target_position, 1.0-exp(-delta * 10)) # lerp ทำให้จอขยับแบบ เฮ็กโพเน็นเชียล จะสมูทกว่าค่าคงที่
+	global_position = global_position.lerp(target_position, 1.0-exp(-delta * 20)) # lerp ทำให้จอขยับแบบ เฮ็กโพเน็นเชียล จะสมูทกว่าค่าคงที่
 	
 
 func acquire_target():
