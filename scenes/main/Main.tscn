@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c0dcqqsp4xj57"]
+[gd_scene load_steps=7 format=3 uid="uid://b4ynb6cgbpb3t"]
 
 [ext_resource type="PackedScene" uid="uid://b7o68haiofmjd" path="res://scenes/game_camera/game_camera.tscn" id="1_j2roi"]
 [ext_resource type="PackedScene" uid="uid://d4j5xo5tcqv8l" path="res://scenes/ui/arena_time_ui.tscn" id="1_m4f31"]
