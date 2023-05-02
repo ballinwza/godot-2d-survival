@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 const MAX_SPEED = 40
+@onready var health_component: HealthComponent = $HealthComponent
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,4 +23,5 @@ func get_derection_to_player():
 
 
 func on_area_entered(other_area: Area2D):
+	health_component.damaged(100)
 	queue_free()

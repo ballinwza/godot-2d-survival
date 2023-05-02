@@ -1,11 +1,11 @@
 extends Node2D
 
+var current_experience = 0
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	$Area2D.area_entered.connect(on_area_entered)
+	
+	
+func on_area_entered(other_area:Node2D):
+	GameEvent.emit_experience_vial_collected(1)
+	queue_free()
